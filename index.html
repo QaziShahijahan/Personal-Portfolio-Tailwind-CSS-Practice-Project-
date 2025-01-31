@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Using Tailwind CSS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+
+    <header class="bg-gray-800 text-white fixed w-full top-0 left-0 z-50">
+      <div
+        class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold">Qazi Shah I Jahan</div>
+
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-gray-400">Home</a>
+
+          <a href="#about" class="hover:text-gray-400">About Me</a>
+
+          <a href="#projects" class="hover:text-gray-400">Projects</a>
+
+          <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </nav>
+
+        <div class="md:hidden flex items-center">
+          <!-- Hamburger Menu -->
+
+          <button class="text-white">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section
+      id="home"
+      class="h-screen bg-cover bg-center flex items-center justify-center text-center text-black"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-4">
+          Hey There! , I'm Qazi Shah I Jahan
+        </h1>
+
+        <p class="text-lg md:text-xl mb-6">A MERN Stack Developer</p>
+
+        <a
+          href="#projects"
+          class="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700"
+          >View My Work</a
+        >
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+
+    <section id="about" class="py-16 px-4 bg-gray-200 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+
+        <div class="flex justify-center mb-8">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D5603AQHPcW7XUnTFBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707037908064?e=1743638400&v=beta&t=wQHUCjTn577DUbxCtPr4kn4RaMBRiV326DhYiT0G2x4"
+            alt="Profile Picture"
+            class="h-[250px] rounded-full border-4 border-white shadow-lg"
+          />
+        </div>
+
+        <p class="text-lg mb-4">
+          I'm a passionate web developer with expertise in HTML, CSS,
+          JavaScript,React JS and more. I love building clean and modern
+          websites that provide great user experiences.
+        </p>
+
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold text-xl">Skills</h3>
+
+            <ul class="list-disc list-inside">
+              <li>HTML & CSS</li>
+              <li>Bootstrap & Tailwind</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>React JS</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-xl">Hobbies</h3>
+
+            <ul class="list-disc list-inside">
+              <li>Photography</li>
+              <li>Gamimg</li>
+              <li>Traveling</li>
+              <li>Hiking</li>
+              <li>Cooking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="py-16 px-4">
+      <div class="max-w-screen-xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-12">My Projects</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Project 1 -->
+
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1642056446459-1f10774273f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Snake Game 🐍</h3>
+
+              <p class="text-gray-600 mb-4">
+                The Snake Game is a simple yet addictive classic arcade game
+                where players control a growing snake that moves around the
+                screen. The goal is to collect food, grow longer, and avoid
+                crashing into the walls or itself.
+              </p>
+
+              <a
+                href="https://qazishahijahan.github.io/Snake-Game---Classic-Arcade-Fun-/"
+                class="text-blue-600 hover:text-blue-800"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1614480633894-f3b7f4bb0e76?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Weather App 🌤️</h3>
+
+              <p class="text-gray-600 mb-4">
+                Weather App A simple, responsive weather app that provides
+                current weather conditions for any city worldwide. This app
+                fetches real-time data using a weather API and displays
+                temperature, humidity, wind speed, and weather conditions with
+                user-friendly icons and descriptions.
+              </p>
+
+              <a
+                href="https://qazishahijahan.github.io/Weather-App-JS/"
+                class="text-blue-600 hover:text-blue-800"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1633675254386-dc5bb4279d56?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Instagram Clone 🌟</h3>
+
+              <p class="text-gray-600 mb-4">
+                This project is a simple Instagram Clone built using HTML, CSS
+                (Bootstrap, Tailwind). It replicates core features of Instagram,
+                including user posts, likes, comments, and friends stories
+                portion.
+              </p>
+
+              <a href="https://qazishahijahan.github.io/Instagram-Clone/" class="text-blue-600 hover:text-blue-800"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="py-16 px-4 bg-gray-800 text-white">
+      <div class="max-w-screen-md mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
+
+        <form class="space-y-6">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <textarea
+            placeholder="Your Message"
+            class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-700"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+      <p>
+        Made with by &hearts; Qazi Shah I Jahan &copy; 2024 | All Rights
+        Reserved
+      </p>
+
+      <div class="mt-4 space-x-6">
+        <a
+          href="https://www.linkedin.com/in/qazi-shah-i-jahan-1210o/"
+          class="hover:text-gray-400"
+          >LinkedIn</a
+        >
+
+        <a href="https://github.com/QaziShahijahan" class="hover:text-gray-400"
+          >GitHub</a
+        >
+
+        <a href="#" class="hover:text-gray-400">Twitter</a>
+      </div>
+    </footer>
+  </body>
+</html>
